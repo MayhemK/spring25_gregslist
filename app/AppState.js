@@ -1,4 +1,5 @@
 import { Car } from './models/Car.js'
+import { House } from './models/House.js'
 import { EventEmitter } from './utils/EventEmitter.js'
 import { createObservableProxy } from './utils/ObservableProxy.js'
 
@@ -53,6 +54,45 @@ class ObservableAppState extends EventEmitter {
       color: 'yellow',
       imgUrl: 'https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/images/02q4/267343/subaru-baja-photo-9829-s-original.jpg?fill=1:1&resize=1200:*'
     }),
+  ]
+
+  houses = [
+    new House({
+      year: '1984',
+      bedrooms: 3,
+      bathrooms: 1,
+      sqft: 1300,
+      price: 350000,
+      description: "wonderful little home in the country",
+      imgUrl: 'https://realestateagentpdx.com/wp-content/uploads/2022/12/1980s-split-level.png.webp'
+    }),
+    new House({
+      year: '1962',
+      bedrooms: 4,
+      bathrooms: 2,
+      sqft: 2200,
+      price: 475000,
+      description: "fixer upper in city limits",
+      imgUrl: 'https://www.southernliving.com/thmb/j-onxmK5zN__68Y1cniFKxiiTJk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-148099801-cc999885b395419fa6cbb6884b71f53a.jpg'
+    }),
+    new House({
+      year: '1975',
+      bedrooms: 1,
+      bathrooms: 2,
+      sqft: 800,
+      price: 120000,
+      description: "flat with extra bathroom instead of closet space",
+      imgUrl: 'https://www.remodelista.com/wp-content/uploads/2015/03/fields/garage-studio-apartment-by-Karin-Montgomery-Spath-Remodelista.jpg'
+    }),
+    new House({
+      year: '2010',
+      bedrooms: 5,
+      bathrooms: 3,
+      sqft: 3200,
+      price: 622000,
+      description: "too rich for your blood, blood",
+      imgUrl: 'https://houston.culturemap.com/media-library/houston-boasts-a-wealth-of-new-homes-on-the-market.jpg?id=26719783&width=2000&height=1500&quality=65&coordinates=133%2C0%2C133%2C0'
+    })
   ]
 }
 
