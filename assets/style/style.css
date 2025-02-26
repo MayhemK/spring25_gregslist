@@ -41,3 +41,10 @@ input {
 .check-input {
   min-width: unset;
 }
+
+.house-img {
+  width: 40%;
+  max-height: 33vh;
+  object-fit: cover;
+  object-position: center;
+}

@@ -1,5 +1,5 @@
 import { AppState } from "../AppState.js";
-// import { HouseService } from "../services/HouseService.js";
+import { houseService } from "../services/HouseService.js";
 
 
 export class HouseController {
@@ -10,8 +10,8 @@ export class HouseController {
 
   drawHouses() {
     const houses = AppState.houses
-    let housesHTML = ''
-    houses.forEach(house => houseCardsContent += house.HouseCard)
+    let houseCardsContent = ''
+    houses.forEach(house => houseCardsContent += house.houseCard)
     const houseListingsElem = document.getElementById('houseListings')
     houseListingsElem.innerHTML = houseCardsContent
   }

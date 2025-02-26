@@ -20,11 +20,11 @@ export class House {
     this.imgUrl = data.imgUrl
   }
 
-  get HouseCard() {
+  get houseCard() {
     return `
   <div class="col-12">
           <div class="shadow bg-light d-flex mb-4">
-            <img src="${this.imgUrl}" alt="${this.sqft} ${this.bedrooms} house">
+            <img src="${this.imgUrl}" alt="${this.sqft} ${this.bedrooms} house" class="house-img">
             <div class="p-3 flex-grow-1">
               <h4 class="d-flex justify-content-between">
                 <div>
