@@ -28,14 +28,14 @@ export class House {
             <div class="p-3 flex-grow-1">
               <h4 class="d-flex justify-content-between">
                 <div>
-                  <p class="fs-4">${this.price}</p>
+                  <p class="fs-4">$${this.price}</p>
                   <p>${this.description}</p>
-                  <div class="">potato</div>
+                  <div class="">Built - ${this.year} </div>
                 </div>
                 <div class="fs-5">
-                  <p>${this.bedrooms}</p>
-                  <p>${this.bathrooms}</p>
-                  <p>${this.sqft}</p>
+                  <p>${this.bedrooms} Bed</p>
+                  <p>${this.bathrooms} Bath</p>
+                  <p>${this.sqft} sqft</p>
                 </div>
               </h4>
             </div>

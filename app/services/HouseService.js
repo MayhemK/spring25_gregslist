@@ -6,6 +6,9 @@ class HouseService {
 
   createHouse(houseData) {
     console.log('hi');
+    const newHouse = new House(houseData)
+    console.log('no');
+
 
   }
 }

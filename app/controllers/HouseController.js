@@ -5,7 +5,7 @@ import { houseService } from "../services/HouseService.js";
 export class HouseController {
   constructor() {
     AppState.on('cars', this.drawHouses)
-    // houseService.loadHouses()
+    this.drawHouses()
   }
 
   drawHouses() {
